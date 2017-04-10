@@ -1,0 +1,66 @@
+﻿@model TechXii.Models.Reviews
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reviews</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TitleOfReview)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TitleOfReview)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthorOfReview)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorOfReview)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryIdForKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryIdForKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewPostTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewPostTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
